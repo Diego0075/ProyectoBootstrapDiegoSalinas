@@ -1,12 +1,14 @@
 // Definicion de colores
 $primary: rgb(230, 16, 16);
 $amar: rgb(226, 240, 32);
-$button-color: rgb(231, 183, 183);
+$button-color: rgb(153, 119, 119);
 $color-nav:rgb(255, 255, 255);
 $body-color:rgb(12, 90, 163);
+$form-color: rgb(245, 184, 184);
 $bg-nav: rgb(90, 184, 36);
 $backgound-color:rgba(222, 250, 218, 0.808);
 
+// Inserccion de la fuente de google
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=RocknRoll+One&display=swap');
 $font-family-sans-serif: 'Roboto', sans-serif;
 $font-cabeceras:'RocknRoll One', bold;
@@ -29,59 +31,61 @@ $navbar-light-color:rgba($color-nav, .95);
 background-color: $navbar-light-background;
 }
 
-
-$form-label-margin-top:5rem ;
-
-label {
-    margin-top: $form-label-margin-top;
-}
-
+// Edición de las cards
+$form-label-margin-top:2rem ;
 
 $border-color:rgb(5, 29, 95);
-$border-width:.5rem;
-$border-radius:.25rem;
-$border-radius-sm:.3rem;
-$border-radius-lg:.5rem;
+$border-width:.2rem;
+// Edicion de los border radious en las cards
+
+$border-radius:1.5rem;
+$border-radius-sm:2.3rem;
+$border-radius-lg:2.5rem;
+
+// Background del boton
+
 $card-cap-bg:rgba(rgb(221, 172, 172),5 ) ;
 $card-spacer-x:1rem;
 
 .card{
+// Tamaño de la fuente en las card
 font-size: 1.6rem;
 }
 
+// Contenido editado del modal
 $modal-content-color:              color(primary);
 $modal-content-bg:                  $color-nav;
 $modal-content-border-width:        1.2rem;
 $modal-content-border-radius:        4.35rem;
 
 .modal-footer{
+    // Edicion del botton que hay en el foter del modal
     button{
-        background-color: $primary;
+        background-color: $amar;
         border: none;
-        &:hover{
-            background-color: rgba($primary, 1);
-        }
+        border-radius: 15px;
     }
 }
 
-//Cambiar color del hr
-$hr-color: $primary;
+//Cambiar color del la linea del hr
+$hr-color: black;
 
-//Cambiar color label formulario
-$form-label-color:  $color-nav;
-$form-background:red;
 
-//Editar Input
+// Editar el input
 $input-border-color: $button-color;
-$input-border-width: 0.2rem;
+$input-border-width: .5rem;
 $input-color: $bg-nav;
 
+// Editado el color del formulario
 .formulario{
-    background-color: red;
+    background-color: $form-color;
 }
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
-
+// Color de fondo del background
 body {
     background-color: $backgound-color;
 }
+
+// El import
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
