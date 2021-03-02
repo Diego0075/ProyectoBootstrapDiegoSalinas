@@ -1,0 +1,87 @@
+// Definicion de colores
+$primary: rgb(230, 16, 16);
+$amar: rgb(226, 240, 32);
+$button-color: rgb(231, 183, 183);
+$color-nav:rgb(255, 255, 255);
+$body-color:rgb(12, 90, 163);
+$bg-nav: rgb(90, 184, 36);
+$backgound-color:rgba(222, 250, 218, 0.808);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=RocknRoll+One&display=swap');
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-cabeceras:'RocknRoll One', bold;
+$headings-font-family:$font-cabeceras;
+
+
+// Edición de la progressBar
+.progress-bar {
+    width: 50%;
+    border-radius: 13px;
+    padding: 3px;
+  }
+
+
+//NavBar editada
+$navbar-light-background:$bg-nav;
+$navbar-light-color:rgba($color-nav, .95);
+
+.navbar{
+background-color: $navbar-light-background;
+}
+
+
+$form-label-margin-top:5rem ;
+
+label {
+    margin-top: $form-label-margin-top;
+}
+
+
+$border-color:rgb(5, 29, 95);
+$border-width:.5rem;
+$border-radius:.25rem;
+$border-radius-sm:.3rem;
+$border-radius-lg:.5rem;
+$card-cap-bg:rgba(rgb(221, 172, 172),5 ) ;
+$card-spacer-x:1rem;
+
+.card{
+font-size: 1.6rem;
+}
+
+$modal-content-color:              color(primary);
+$modal-content-bg:                  $color-nav;
+$modal-content-border-width:        1.2rem;
+$modal-content-border-radius:        4.35rem;
+
+.modal-footer{
+    button{
+        background-color: $primary;
+        border: none;
+        &:hover{
+            background-color: rgba($primary, 1);
+        }
+    }
+}
+
+//Cambiar color del hr
+$hr-color: $primary;
+
+//Cambiar color label formulario
+$form-label-color:  $color-nav;
+$form-background:red;
+
+//Editar Input
+$input-border-color: $button-color;
+$input-border-width: 0.2rem;
+$input-color: $bg-nav;
+
+.formulario{
+    background-color: red;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+    background-color: $backgound-color;
+}
