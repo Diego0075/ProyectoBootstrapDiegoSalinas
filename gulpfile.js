@@ -46,7 +46,7 @@ var options2={
     overwrite:true
 }
 function procesar_html(){
-    return src("./servicios.html")
+    return src("./index.html")
     .pipe(processhtml())
     .pipe(dest("./proyecto",options2));
 }
